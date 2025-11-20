@@ -1,0 +1,30 @@
+{
+  "name": "order-taking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm run build && node --test dist/**/*.test.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.5",
+    "@types/supertest": "^6.0.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "purify-ts": "^2.1.2"
+  }
+}
